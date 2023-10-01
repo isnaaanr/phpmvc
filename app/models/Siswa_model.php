@@ -25,7 +25,7 @@ class Siswa_model
     {
         $query = "INSERT INTO siswa 
         VALUES
-        ('', :nama, :absen, :email, :jurusan)";
+        ('', :nama, :absen, :email, :jurusan)"; 
 
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);

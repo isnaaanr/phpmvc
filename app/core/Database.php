@@ -56,12 +56,14 @@ class Database
         $this->stmt->execute();
     }
 
+    //mengambil semua data
     public function resultSet()
     {
         $this->execute();
         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    //satu data
     public function single()
     {
         $this->execute();

@@ -4,7 +4,7 @@ class App
 {
     protected $controller = 'home';
     protected $method = 'index';
-    protected $params = [];
+    protected $params = []; //jika url tdk ditemukan mengeluarkan home dari controller
     public function __construct()
     {
         $url = $this->parseURL();
@@ -36,7 +36,7 @@ class App
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
-    public function parseURL()
+    public function parseURL() //mengganti url
     {
         if (isset($_GET['url'])) {
             $url = rtrim($_GET['url'], '/');

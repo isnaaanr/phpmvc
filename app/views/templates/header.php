@@ -22,6 +22,9 @@
           <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>">Home</a>
           <a class="nav-link active" href="<?= BASEURL; ?>/siswa">Siswa</a>
           <a class="nav-link active" href="<?= BASEURL; ?>/about">About</a>
+          <a class="nav-link active" href="<?= BASEURL; ?>/jurusan">Jurusan</a>
+          <a class="nav-link active" href="<?= BASEURL; ?>/kelas">Kelas</a>
+          <a class="nav-link active" href="<?= BASEURL; ?>/guru">Guru</a>
         </div>
       </div>
     </div>

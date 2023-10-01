@@ -23,10 +23,7 @@ $(function () {
                 $('#email').val(data.email);
                 $('#jurusan').val(data.jurusan);
                 $('#id').val(data.id);
-            }
-        })
-    })
-
-    
-
+            },
+        });
+    });
 });

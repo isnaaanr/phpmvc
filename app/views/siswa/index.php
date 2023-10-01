@@ -32,11 +32,11 @@
           <li class="list-group-item d-flex flex-row justify-content-between">
             <?= $siswa['nama']; ?>
             <div class="d-flex gap-2">
-              <a href="<?= BASEURL; ?>/siswa/detail/<?= $siswa['id'] ?>" class="badge text-bg-primary float-right">detail</a>
+              <a href="<?= BASEURL; ?>/siswa/detail/<?= $siswa['id'] ?>" class="badge text-bg-primary text-decoration-none float-right">detail</a>
 
-              <a href="<?= BASEURL; ?>/siswa/edit/<?= $siswa['id'] ?>" class="badge text-bg-success float-right tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $siswa['id']; ?>">edit</a>
+              <a href="<?= BASEURL; ?>/siswa/edit/<?= $siswa['id'] ?>" class="badge text-bg-success text-decoration-none float-right tampilModalUbah" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $siswa['id']; ?>">edit</a>
 
-              <a href="<?= BASEURL; ?>/siswa/hapus/<?= $siswa['id'] ?>" class="badge text-bg-danger float-right" onclick="return confirm('yakin?');">hapus</a>
+              <a href="<?= BASEURL; ?>/siswa/hapus/<?= $siswa['id'] ?>" class="badge text-bg-danger text-decoration-none float-right" onclick="return confirm('yakin?');">hapus</a>
             </div>
           </li>
         <?php endforeach; ?>
